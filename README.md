@@ -1,6 +1,5 @@
-# Book Store with React & Redux
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# Calculator
+# Book Store with React & Redux
 ![Top Page Screenshot](./screenshot.png)
 
 
@@ -33,7 +32,7 @@ A list of commonly used resources that I find helpful is listed in the acknowled
 
 ## Live Demo
 
-[Live Demo Link](https://yokosaka-bookstore.herokuapp.com/)
+[Live Demo Link](https://my-bookstore-yoko.herokuapp.com/)
 
 
 ## Getting Started
