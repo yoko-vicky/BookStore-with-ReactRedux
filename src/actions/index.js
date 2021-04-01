@@ -16,9 +16,3 @@ export const removeBook = ({ id }) => ({
   type: 'REMOVE_BOOK',
   id,
 });
-
-export const editBook = (id, book = {}) => ({
-  type: 'EDIT_BOOK',
-  id,
-  book,
-});

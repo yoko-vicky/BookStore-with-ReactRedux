@@ -8,8 +8,6 @@ const booksReducer = (state = defaultBooksState, action) => {
       ];
     case 'REMOVE_BOOK':
       return state.filter((book) => book.id !== action.id);
-    case 'EDIT_BOOK':
-      return state.map((book) => (book.id === state.id ? { ...book, ...state.book } : book));
     default:
       return state;
   }

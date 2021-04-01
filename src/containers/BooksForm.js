@@ -3,11 +3,12 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { addBook } from '../actions/index';
 
+const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+
 class BooksForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      categories: ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'],
       id: '',
       title: '',
       category: 'Action',
@@ -42,7 +43,7 @@ class BooksForm extends React.Component {
   }
 
   render() {
-    const { categories, title, category } = this.state;
+    const { title, category } = this.state;
     return (
       <div>
         <form onSubmit={this.onSubmit}>
