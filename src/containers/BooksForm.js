@@ -2,8 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { createBook } from '../actions/index';
-
-const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+import categories from '../utilities/categories';
 
 class BooksForm extends React.Component {
   constructor(props) {
