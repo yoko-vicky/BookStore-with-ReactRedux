@@ -8,7 +8,9 @@ $black: #121212;
 $white: #fff;
 $grey: #888;
 $light-black: rgba($black, 0.5);
-$light-grey: rgba(0, 0, 0, 0.05);
+$light-grey: rgba(0, 0, 0, 0.04);
+$line-grey: #e8e8e8;
+$pinkish-grey: #c4c4c4;
 
 // FONT
 $default-font-size: 1.4rem;
@@ -16,4 +18,5 @@ $main-font: 'Roboto Slab', serif;
 $sub-font: 'Montserrat', sans-serif;
 
 // WIDTH
+$default-width: 96%;
 $max-width: 120rem;

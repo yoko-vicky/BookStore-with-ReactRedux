@@ -10,7 +10,7 @@ class BooksForm extends React.Component {
     this.state = {
       id: '',
       title: '',
-      category: 'Action',
+      category: '',
     };
   }
 
@@ -38,23 +38,28 @@ class BooksForm extends React.Component {
   render() {
     const { title, category } = this.state;
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
+      <div className="addbook">
+        <div className="addbook__title">Add new book</div>
+        <form onSubmit={this.handleSubmit} className="addbook__form">
           <input
             type="text"
             value={title}
             name="title"
-            placeholder="Title"
+            placeholder="Book title"
             onChange={this.handleChange}
+            className="addbook__input"
           />
           <select
+            required
             value={category}
             onChange={this.handleChange}
             name="category"
+            className="addbook__select"
           >
+            <option value="" disabled selected>Category</option>
             {categories.map((cat) => <option value={cat} key={cat}>{cat}</option>)}
           </select>
-          <button type="submit">Save Book</button>
+          <button type="submit" className="blue-btn">Add Book</button>
         </form>
       </div>
     );

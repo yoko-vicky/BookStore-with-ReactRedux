@@ -1,12 +1,15 @@
 html {
-  font-size: 62.5%; // 1rem = 10px (10/16)
+  // font-size: 50%;
+  font-size: 62.5%;
 }
 
-body {
+body,
+button {
   font-family: $main-font;
   line-height: normal;
-  font-size: $default-font-size;
+  font-size: 1.4rem;
   color: $black;
+  font-weight: lighter;
 }
 
 p {

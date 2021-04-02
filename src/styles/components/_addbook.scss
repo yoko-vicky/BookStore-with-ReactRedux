@@ -1,0 +1,48 @@
+.addbook {
+  @include setWidth;
+
+  padding: 3.2rem 0 8rem;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $grey;
+    margin-bottom: 2rem;
+
+    @include subFont;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 5fr 3fr 18.4rem;
+    grid-gap: 3.4rem;
+  }
+
+  &__input,
+  &__select {
+    background: $white;
+    font-family: $sub-font;
+    padding: 1.3rem 1.8rem;
+    border-radius: 4px;
+    border: 1px solid $line-grey;
+  }
+
+  &__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    background-image: url("../../assets/carret.svg");
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 5px;
+
+    &:invalid {
+      color: $pinkish-grey;
+    }
+  }
+
+  .blue-btn {
+    font-weight: bold;
+  }
+}

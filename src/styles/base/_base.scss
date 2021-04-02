@@ -54,10 +54,24 @@ select {
   border: none;
   border-radius: 0;
   outline: none;
+  cursor: pointer;
   // appearance: none;
 }
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+::placeholder {
+  color: $pinkish-grey;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: $pinkish-grey;
 }
