@@ -9,6 +9,7 @@ const AppRouter = () => (
       <Header />
       <Switch>
         <Route exact path="/" component={App} />
+        <Route exact path="/categories" component={App} />
       </Switch>
     </div>
   </BrowserRouter>

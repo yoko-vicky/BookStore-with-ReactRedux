@@ -56,7 +56,7 @@ class BooksForm extends React.Component {
             name="category"
             className="addbook__select"
           >
-            <option value="" disabled selected>Category</option>
+            <option value="" disabled>Category</option>
             {categories.map((cat) => <option value={cat} key={cat}>{cat}</option>)}
           </select>
           <button type="submit" className="blue-btn">Add Book</button>

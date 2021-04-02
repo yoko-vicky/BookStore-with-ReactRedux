@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore from './reducers/index';
 import AppRouter from './routers/AppRouter';
-import './styles/style.scss';
+import './assets/styles/style.scss';
 import { createBook } from './actions/index';
 import categories from './utilities/categories';
+import renderCharts from './vendors/charts';
 
 const store = configureStore();
 
@@ -19,4 +20,11 @@ const jsx = (
   </Provider>
 );
 
+store.subscribe(() => {
+  setTimeout(() => {
+    renderCharts();
+  }, 1);
+});
+
 ReactDOM.render(jsx, document.getElementById('root'));
+renderCharts();

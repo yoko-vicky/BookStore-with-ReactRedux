@@ -24,7 +24,7 @@ const Book = ({
       </div>
     </div>
     <div className="book__middle book__chart">
-      <div className="book__chart__graph">Graph</div>
+      <div className="book__chart__graph chart"> </div>
       <div className="book__chart__text">
         <div className="book__chart__percent">64%</div>
         <div className="book__chart__completed">completed</div>
