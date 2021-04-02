@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap');
+
+// COLORS
+$primary-color: #0290ff;
+$primary-color-dark: #4386bf;
+$black: #121212;
+$white: #fff;
+$grey: #888;
+$light-black: rgba($black, 0.5);
+$light-grey: rgba(0, 0, 0, 0.05);
+
+// FONT
+$default-font-size: 1.4rem;
+$main-font: 'Roboto Slab', serif;
+$sub-font: 'Montserrat', sans-serif;
+
+// WIDTH
+$max-width: 120rem;
