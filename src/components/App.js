@@ -3,8 +3,7 @@ import BooksList from '../containers/BooksList';
 import BooksForm from '../containers/BooksForm';
 
 const App = () => (
-  <div>
-    <h1>Book Store</h1>
+  <div className="container">
     <BooksList />
     <BooksForm />
   </div>

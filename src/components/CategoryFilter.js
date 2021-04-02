@@ -4,13 +4,17 @@ import categories from '../utilities/categories';
 
 const filterCategories = ['All', ...categories];
 const CategoryFilter = ({ handleFilterChange, filter }) => (
-  <select
-    value={filter}
-    onChange={handleFilterChange}
-    name="categoryFilter"
-  >
-    {filterCategories.map((cat) => <option value={cat} key={cat}>{cat}</option>)}
-  </select>
+  <div className="category-filter">
+    <div className="category-filter__text">Filtered by</div>
+    <select
+      value={filter}
+      onChange={handleFilterChange}
+      name="categoryFilter"
+      className="category-filter__select"
+    >
+      {filterCategories.map((cat) => <option value={cat} key={cat}>{cat}</option>)}
+    </select>
+  </div>
 );
 
 CategoryFilter.propTypes = {

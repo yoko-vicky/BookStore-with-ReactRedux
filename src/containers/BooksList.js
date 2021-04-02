@@ -27,29 +27,17 @@ class BooksList extends React.Component {
   render() {
     const { books, filter } = this.props;
     return (
-      <div>
+      <div className="books">
         <CategoryFilter handleFilterChange={this.handleFilterChange} filter={filter} />
-        <table>
-          <thead>
-            <tr>
-              <th>Book ID</th>
-              <th>Title</th>
-              <th>Category</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {books.map((book) => (
-              <Book
-                id={book.id}
-                title={book.title}
-                category={book.category}
-                key={book.id}
-                handleRemoveBook={this.handleRemoveBook}
-              />
-            ))}
-          </tbody>
-        </table>
+        {books.map((book) => (
+          <Book
+            id={book.id}
+            title={book.title}
+            category={book.category}
+            key={book.id}
+            handleRemoveBook={this.handleRemoveBook}
+          />
+        ))}
       </div>
     );
   }

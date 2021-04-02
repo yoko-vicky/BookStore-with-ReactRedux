@@ -1,5 +1,7 @@
 const categories = [
   'Action',
+  'Science Fiction',
+  'Economy',
   'Biography',
   'History',
   'Horror',

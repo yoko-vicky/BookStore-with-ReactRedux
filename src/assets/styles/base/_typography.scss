@@ -1,0 +1,17 @@
+html {
+  // font-size: 50%;
+  font-size: 62.5%;
+}
+
+body,
+button {
+  font-family: $main-font;
+  line-height: normal;
+  font-size: 1.4rem;
+  color: $black;
+  font-weight: lighter;
+}
+
+p {
+  font-size: $default-font-size;
+}

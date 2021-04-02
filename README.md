@@ -83,3 +83,5 @@ This project is [MIT](./LICENSE) licensed.
 ## Acknowledgements
 * [Prop Types](https://www.npmjs.com/package/prop-types)
 * [Heroku](https://dashboard.heroku.com/)
+* [Apexcharts](https://apexcharts.com/)
+* [iconify](https://iconify.design/icon-sets/)
